@@ -1,0 +1,170 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'assets/gintamaHeader.jpg' %}" alt="header" class="bIMG">
+        <div class="container">
+            <div class="profile">
+                <img src="{% static 'assets/mypic.jpg' %}" alt="Profile Picture">
+                <h1>Emmanuel Cari-an</h1>
+                <p>Hueman&#128187;</p>
+                <div class="prog">
+                    <img src="{% static 'assets/pyLogo.png' %}" alt="Python">
+                    <img src="{% static 'assets/jsLogo.png' %}" alt="JavaScript">
+                    <img src="{% static 'assets/c#Logo.png' %}" alt="c#">
+                    <img src="{% static 'assets/cLogo.png' %}" alt="c">
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="{% url 'home' %}">About</a></li>
+                <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section>
+                {% block content %}
+                {% endblock %}
+            </section>
+            <!-- Add more sections as needed -->
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Emman</p>
+        </div>
+    </footer>
+
+    <style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #cfe4ff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+    position: relative;
+}
+
+.bIMG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  z-index: -1;
+}
+
+
+.profile {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.profile p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.prog img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 40px;
+  margin-right: 10px;
+}
+
+nav {
+  background-color: #5abde4;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 20px;
+  color: #21327c;
+  text-decoration: none;
+}
+
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color:#5abde4;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  color: #21327c;
+}
+
+.about, .contact {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+    </style>
+</body>
+</html>

@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: #566adf;
+  padding: 60px 0;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.profile p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.social-links a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #25ace2;
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+nav {
+  background-color: #5abde4;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 20px;
+  color: #21327c;
+  text-decoration: none;
+}
+
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #fdfdfd;
+}
+
+footer {
+  background-color: #4441da;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  color: #5067ce;
+}
